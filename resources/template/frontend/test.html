@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Formulaire de Saisie</title>
+</head>
+<body>
+    <h1>Formulaire de Saisie</h1>
+
+    <form>
+        <fieldset>
+            <legend>Personne 1</legend>
+            <label for="nom1">Nom :</label>
+            <input type="text" id="nom1" name="nom1" placeholder="Entrez le nom de la personne 1" required>
+            <br><br>
+            <label for="prenom1">Prénom :</label>
+            <input type="text" id="prenom1" name="prenom1" placeholder="Entrez le prénom de la personne 1" required>
+        </fieldset>
+        <br><br>
+        <fieldset>
+            <legend>Personne 2</legend>
+            <label for="nom2">Nom :</label>
+            <input type="text" id="nom2" name="nom2" placeholder="Entrez le nom de la personne 2" required>
+            <br><br>
+            <label for="prenom2">Prénom :</label>
+            <input type="text" id="prenom2" name="prenom2" placeholder="Entrez le prénom de la personne 2" required>
+        </fieldset>
+        <br><br>
+        <fieldset id="fieldset-autres-personnes">
+            <legend>Personne 3</legend>
+            <label for="autre-nom">Nom :</label>
+            <input type="text" id="autre-nom" name="autre-nom" placeholder="Entrez le nom de la personne" required>
+            <br><br>
+            <label for="autre-prenom">Prénom :</label>
+            <input type="text" id="autre-prenom" name="autre-prenom" placeholder="Entrez le prénom de la personne" required>
+            <br><br>
+            <button type="button" id="ajouter-personne">Ajouter une autre personne</button>
+        </fieldset>
+        <br><br>
+        <input type="submit" value="Envoyer">
+    </form>
+
+    <script>
+        var compteur = 4;
+
+        document.getElementById('ajouter-personne').addEventListener('click', function() {
+            var fieldset = document.createElement('fieldset');
+            var legend = document.createElement('legend');
+            legend.textContent = 'Personne ' + compteur;
+            fieldset.appendChild(legend);
+            
+            var nomLabel = document.createElement('label');
+            nomLabel.textContent = 'Nom :';
+            var nomInput = document.createElement('input');
+            nomInput.type = 'text';
+            nomInput.name = 'autre-nom-' + compteur;
+            nomInput.placeholder = 'Entrez le nom de la personne';
+            nomInput.required = true;
+            
+            var prenomLabel = document.createElement('label');
+            prenomLabel.textContent = 'Prénom :';
+            var prenomInput = document.createElement('input');
+            prenomInput.type = 'text';
+            prenomInput.name = 'autre-prenom-' + compteur;
+            prenomInput.placeholder = 'Entrez le prénom de la personne';
+            prenomInput.required = true;
+            
+            fieldset.appendChild(nomLabel);
+            fieldset.appendChild(nomInput);
+            fieldset.appendChild(document.createElement('br'));
+            fieldset.appendChild(document.createElement('br'));
+            fieldset.appendChild(prenomLabel);
+            fieldset.appendChild(prenomInput);
+            
+            document.getElementById('fieldset-autres-personnes').appendChild(fieldset);
+            
+            compteur++;
+        });
+    </script>
+</body>
+</html>

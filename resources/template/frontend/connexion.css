@@ -1,0 +1,111 @@
+/* Style global */
+body {
+    
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+
+}
+
+/* Style du contenu principal */
+div {
+    margin: 120px auto;
+    max-width: 400px;
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 50px;
+    box-shadow: 0 0px 30px  rgb(154, 235, 188);
+    
+}
+/* Style de l'en-tête */
+header {
+    background-color: #2c3e50;
+    color: #fff;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 70px;
+   color:rgb(247, 242, 242)
+     
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    color:rgb(28, 179, 91);
+    font-size: 43px;
+}
+
+form {
+    margin-top: 20px;
+    
+}
+
+fieldset {
+    border: none;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    color: black;
+    font-size: 20px;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 94%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+a:hover {
+    
+    color:rgb(151, 102, 102);
+    text-decoration: underline;
+}
+
+button[type="submit"] {
+    background-color: rgb(28, 179, 91);
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 17px;
+}
+
+form a {
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    color: #333;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+footer {
+    background-color: #2c3e50;
+    color: #fff;
+    padding: 40px;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+}
+footer a {
+    margin-right: 25px;
+}

@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Information Générales</title>
+    <link rel="stylesheet" href="info_générales.css" />
+   
+</head>
+<body>
+    <header>
+        
+        <span id="h_dec">
+            <h1><b>Créer ma Société</b></h1> <br>
+            
+            <a href="index.html"  id="deconnexion">Se déconnecter</a>
+           </span>  <br>
+            <span  id="menu">
+            <a href="info_générales.html">Création de Societé</a> <br>
+           <a href="document_societé.html">Document de Société</a> <br>
+           <a href="contrats.html">Modéles de Contrat</a> <br>
+           <a href="assemblé_general.html">Assemblée Générales</a> <br>
+           <a href="levé_de_fond.html">Levé de Fond</a> 
+       </span>
+    </header>
+       
+        <h1>Informations Générales</h1>
+        <p id="Annonce">( Besoin d'Assistance ? Appeler le +221 781077373 )</p>
+        <form action="soumettre.php" method="post">
+            <fieldset  id="fieldset"  style="display: block;">
+                <div id="Typ_Sos">
+                    <label for="type_societe">Choisissez le Type de Societé :<span class="required">*</span></label>
+                    <select name="type_societe" id="type_societe">
+                        <option value="Unipersonelle">Unipersonnelle (Une Personne) </option>
+                        <option value="Pluripersonelle">Pluripersonnelle (Deux ou Plusieurs Personnes) </option>
+                    </select>
+                </div>
+                <div id="premier">
+                    <p id="infAss">Informations sur l'Associé</p>
+                <label for="nom">Nom :<span class="required">*</span></label>
+                <input type="text" name="nom" id="nom"><br><br>
+                <label for="prenom">Prénom :<span class="required">*</span></label>
+                <input type="text" name="prenom" id="prenom"><br><br>
+                <label for="date_naissance">Date de naissance :<span class="required">*</span></label>
+                <input type="date" name="date_naissance" id="date_naissance" max="2002-12-31"><br><br>
+                <label for="lieu_naissance_epouse">Lieu de naissance :<span class="required">*</span></label>
+                <input type="text" name="lieu_naissance" id="lieu_naissance"><br><br>
+                <label for="nationalité">Nationalité :<span class="required">*</span></label>
+                <input type="text" name="nationalité" id="nationalité"><br><br>
+                <label for="profession">Profession :<span class="required">*</span></label>
+                <input type="text" name="profession" id="profession"><br><br>
+                <label for="cin">Numéro CNI :<span class="required">*</span></label>
+                <input type="number" id="cin" name="cin" min="0" placeholder="Entrez le numéro de votre piéce d'identité"><br><br>
+                <label for="date_del">Date de Délivrance :<span class="required">*</span></label>
+                <input type="date" name="date_del" id="date_del" ><br><br>
+                <label for="date_exp">Date d'Expiration :<span class="required">*</span></label>
+                <input type="date" name="date_exp" id="date_exp" ><br><br>
+                <label for="adresse">Adresse :<span class="required">*</span></label>
+                <input type="text" name="adresse" id="adresse_ass"><br><br>
+                <label for="telephone">Numéro de téléphone :<span class="required">*</span></label>
+                <input type="number" id="telephone"  min="0" name="telephone" placeholder="Entrez votre numéro de téléphone"><br><br>
+                <span id="spanpoucentage" style="display: none;">
+                  <label for="poucentage">Poucentage Détenu :<span class="required">*</span></label>
+                  <input type="number" id="poucentage"  name="poucentage" min="0" max="100" placeholder="Entrez le pourcentage détenu"><br><br>
+                </span>
+                <label for="document">Pièce d'identité :<span class="required">*</span></label>
+                <input type="file" name="documentass" id="documentass"><br><br>
+                <label for="situation_matrimoniale">Situation matrimoniale :<span class="required">*</span></label>
+                <select name="situation_matrimoniale" id="situation_matrimoniale">
+                    <option value="Célibataire">Célibataire </option>
+                    <option value="Marie">Marié</option>
+                    <option value="Divorcé">Divorcé</option>
+                    <option value="Veuf">Veuf</option>
+                </select><br><br>
+                <div id="epouse_fields" style="display: none;">
+                    <label for="nom_epouse">Prénom et Nom du Conjoint :<span class="required">*</span></label>
+                    <input type="text" name="nom_epouse" id="prenom_epouse"><br><br>
+                    <label for="date_naissance_epouse">Date de naissance :<span class="required">*</span></label>
+                    <input type="date" name="date_naissance_epouse" id="date_naissance_epouse" max="2003-12-31"><br><br>
+                    <label for="lieu_naissance_epouse">Lieu de naissance du Conjoint :<span class="required">*</span></label>
+                    <input type="text" name="lieu_naissance_epouse" id="lieu_naissance_epouse" ><br><br>
+                    <label for="nationalité">Nationalité :<span class="required">*</span></label>
+                    <input type="text" name="nationalité" id="nationalité_conjoint"><br><br>
+                    <label for="date_mariage">Date du mariage :<span class="required">*</span></label>
+                    <input type="date" name="date_mariage" id="date_mariage" ><br><br>     
+                    <label for="lieu_mariage">Lieu du mariage :<span class="required">*</span></label>
+                    <input type="text" name="lieu_mariage" id="lieu_mariage" ><br><br>
+                    <label for="date_contrat_mariage">Date du contrat de mariage :(s’il y a lieu)</label>
+                    <input type="date" name="date_contrat_mariage" id="date_contrat_mariage" ><br><br>
+                    <label for="non_resid_notaire">Nom et résidence du notaire :<span class="required">*</span></label>
+                    <input type="text" name="non_resid_notaire" id="non_resid_notaire" ><br><br>
+                    <label for="regime">Régime matrimonial :<span class="required">*</span></label>
+                    <select name="regime" id="regime">
+                    <option value="choix_regime">Choisir votre regime</option>
+                    <option value="Séparation">Séparation</option>
+                    <option value="Communauté">Communauté</option>
+                    </select><br><br>
+                </div>
+                <label for="signature">Signature :<span class="required">*</span></label>
+                <canvas id="signatureCanvas" width="400" height="200"></canvas><br><br>
+                <button type="button" onclick="clearSignature(); return false;">Effacer</button>
+
+                <span id="deuxieme_associer"   style="display: none;">
+                    <p id="infdeuxiAss">Informations sur l'Associé 2</p>
+                    <label for="nom">Nom :<span class="required">*</span></label>
+                    <input type="text" name="nom" id="nomD"><br><br>
+                    <label for="prenom">Prénom :<span class="required">*</span></label>
+                    <input type="text" name="prenom" id="prenomD"><br><br>
+                    <label for="date_naissance">Date de naissance :<span class="required">*</span></label>
+                    <input type="date" name="date_naissance" id="date_naissanceD" max="2002-12-31"><br><br>
+                    <label for="lieu_naissance_epouse">Lieu de naissance :<span class="required">*</span></label>
+                    <input type="text" name="lieu_naissance" id="lieu_naissanceD"><br><br>
+                    <label for="nationalité">Nationalité :<span class="required">*</span></label>
+                    <input type="text" name="nationalité" id="nationalitéD"><br><br>
+                    <label for="profession">Profession :<span class="required">*</span></label>
+                    <input type="text" name="profession" id="professionD"><br><br>
+                    <label for="cin">Numéro CNI :<span class="required">*</span></label>
+                    <input type="number" id="cinD" name="cin" min="0" placeholder="Entrez le numéro de votre piéce d'identité"><br><br>
+                    <label for="date_del">Date de Délivrance :<span class="required">*</span></label>
+                    <input type="date" name="date_del" id="date_delD" ><br><br>
+                    <label for="date_exp">Date d'Expiration :<span class="required">*</span></label>
+                    <input type="date" name="date_exp" id="date_expD" ><br><br>
+                    <label for="adresse">Adresse :<span class="required">*</span></label>
+                    <input type="text" name="adresse" id="adresse_assD"><br><br>
+                    <label for="telephone">Numéro de téléphone :<span class="required">*</span></label>
+                    <input type="number" id="telephoneD" min="0" name="telephone" placeholder="Entrez votre numéro de téléphone"><br><br>
+                    <label for="poucentage">Poucentage Détenu :<span class="required">*</span></label>
+                    <input type="number" id="poucentageD"  name="poucentage" min="0" max="100" placeholder="Entrez le pourcentage détenu"><br><br>
+                    <label for="document">Pièce d'identité :<span class="required">*</span></label>
+                    <input type="file" name="documentass" id="documentassD"><br><br>
+                    <label for="situation_matrimoniale">Situation matrimoniale :<span class="required">*</span></label>
+                    <select name="situation_matrimoniale" id="situation_matrimonialeD">
+                        <option value="Célibataire">Célibataire </option>
+                        <option value="Marie">Marié</option>
+                        <option value="Divorcé">Divorcé</option>
+                        <option value="Veuf">Veuf</option>
+                    </select><br><br>
+                    <div id="epouse_fieldsD" style="display: none;">
+                        <label for="nom_epouse">Prénom et Nom du Conjoint :<span class="required">*</span></label>
+                        <input type="text" name="nom_epouse" id="prenom_epouseD"><br><br>
+                        <label for="date_naissance_epouse">Date de naissance :<span class="required">*</span></label>
+                        <input type="date" name="date_naissance_epouse" id="date_naissance_epouseD" max="2003-12-31"><br><br>
+                        <label for="lieu_naissance_epouse">Lieu de naissance du Conjoint :<span class="required">*</span></label>
+                        <input type="text" name="lieu_naissance_epouse" id="lieu_naissance_epouseD" ><br><br>
+                        <label for="nationalité">Nationalité :<span class="required">*</span></label>
+                        <input type="text" name="nationalité" id="nationalité_conjointD"><br><br>
+                        <label for="date_mariage">Date du mariage :<span class="required">*</span></label>
+                        <input type="date" name="date_mariage" id="date_mariageD" ><br><br>     
+                        <label for="lieu_mariage">Lieu du mariage :<span class="required">*</span></label>
+                        <input type="text" name="lieu_mariage" id="lieu_mariageD" ><br><br>
+                        <label for="date_contrat_mariage">Date du contrat de mariage :(s’il y a lieu)</label>
+                        <input type="date" name="date_contrat_mariage" id="date_contrat_mariageD" ><br><br>
+                        <label for="non_resid_notaire">Nom et résidence du notaire :<span class="required">*</span></label>
+                        <input type="text" name="non_resid_notaire" id="non_resid_notaireD" ><br><br>
+                        <label for="regime">Régime matrimonial :<span class="required">*</span></label>
+                        <select name="regime" id="regimeD">
+                        <option value="choix_regime">Choisir votre regime</option>
+                        <option value="Séparation">Séparation</option>
+                        <option value="Communauté">Communauté</option>
+                        </select>
+                    </div>
+                    <label for="signature">Signature :<span class="required">*</span></label>
+                    <canvas id="signatureCanvasDxm" width="400" height="200"></canvas><br><br>
+                    <button type="button" onclick="clearSignatureD(); return false;">Effacer</button>
+                    <br><br>
+                    <button type="button" id="ajouter_associé">Ajouter un autre associé</button>
+                    <br><br>
+                </span>
+
+            </div>
+            <div id="second" style="display: none;">
+                <p id="infSoc">Informations sur la Société</p>
+                <label for="nom_societe">Dénomination de la société :<span class="required">*</span></label>
+                <input type="text" name="nom_societe" id="nom_societe"><br><br>
+                <label for="adresse_societe">Adresse de la société :<span class="required">*</span></label>
+                <input type="text" name="adresse_societe" id="adresse_societe"><br><br>
+                <label for="montant">Montant Capital :<span class="required">*</span></label>
+                <input type="number" id="montant" name="montant" placeholder="Saisir un montant" /><br><br>
+                <select id="montant_forfait">
+                <option value="">Choisir le montant forfait</option>
+                <option value="300000">300.000FCFA</option>
+                </select><br><br>
+                <label for="gérant">Gérant :<span class="required">*</span></label>
+                <select name="Gérant" id="gérant">
+                    <option id="moi" value="Moi">Moi meme</option>
+                    <option value="Autre">Une autre personne</option>
+                </select><br><br>
+                <div id="autre_gérant" style="display: none;">
+                    <p id="infGér">Informations sur le Gérant</p>
+                    <label for="nom_gérant">Nom  Gérant :<span class="required">*</span></label>
+                    <input type="text" name="nom_gérant" id="nom_gérant"><br><br>
+                    <label for="prenom_gérant">Prénom  Gérant :<span class="required">*</span></label>
+                    <input type="text" name="prénom_gérant" id="prénom_gérant"><br><br>
+                    <label for="nationalité">Nationalité :<span class="required">*</span></label>
+                    <input type="text" name="nationalité" id="nationalité_gérant"><br><br>
+                    <label for="profession">Profession :<span class="required">*</span></label>
+                    <input type="text" name="profession" id="profession_gérant"><br><br>
+                    <label for="email_gérant">Email :<span class="required">*</span></label>
+                    <input type="email" id= "email_gérant" placeholder="raph7788@gmail.com"><br><br>
+                    <label for="telephone_gerant">Numéro de téléphone :<span class="required">*</span></label>
+                    <input type="number" id="telephone_gerant" max="0" name="telephone_gerant" placeholder="Entrez votre numéro de téléphone"><br><br>    
+                    <label for="document">Pièce d'identité :<span class="required">*</span></label>
+                <input type="file" name="documentgérant" id="documentgérant"><br><br>
+                </div>
+                <label for="objet_social">Objet social :<span class="required">*</span></label>
+                <textarea name="objet_social" id="objet_social" rows="7"  ></textarea>
+                
+            </div>
+           
+            </fieldset>
+
+            <div id="contRec"  style="display: none;"> </div> 
+            <p id="precedent"  style="display: none;"> <span class="arrow">&larr;</span> Précedent</p> 
+            <p id="recap" style="display: none;">Récapitulatif  <span class="arrow">&rarr;</span></p>
+            <p  id="suivant">Suivant  <span class="arrow">&rarr;</span></p> 
+            <button type="submit" name="submit" id="submit" style="display: none;">Soumettre</button>
+
+        </form>  
+           
+        
+
+
+    
+<footer>
+    <p>
+        <a href="a-propos.html">À propos</a>  
+        <a href="contact.html">Contact</a> 
+        <a href="faq.html">FAQ</a>
+    </p>
+    <p>Tous droits réservés &copy; 2023 Créer ma Société</p>
+ </footer>
+ <script src="info_générales.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.10.0/jspdf.umd.min.js"></script>
+
+
+</body>
+</html>
