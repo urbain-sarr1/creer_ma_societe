@@ -24,47 +24,51 @@ use App\Http\Controllers\PermissionController;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+require __DIR__ . '/frontend.php';
+require __DIR__ . '/backend.php';
+// Auth::routes(['register'=>false]);php
 
-Route::prefix('/')
-    ->middleware('auth')
-    ->group(function () {
-        Route::resource('roles', RoleController::class);
-        Route::resource('permissions', PermissionController::class);
+// Route::get('/', function () {
+//     return view('welcome');
+// });
 
-        Route::resource('associes', AssocieController::class);
-        Route::resource('conjoints', ConjointController::class);
-        Route::resource('gerants', GerantController::class);
-        Route::get('all-infos', [InfosController::class, 'index'])->name(
-            'all-infos.index'
-        );
-        Route::post('all-infos', [InfosController::class, 'store'])->name(
-            'all-infos.store'
-        );
-        Route::get('all-infos/create', [
-            InfosController::class,
-            'create',
-        ])->name('all-infos.create');
-        Route::get('all-infos/{infos}', [InfosController::class, 'show'])->name(
-            'all-infos.show'
-        );
-        Route::get('all-infos/{infos}/edit', [
-            InfosController::class,
-            'edit',
-        ])->name('all-infos.edit');
-        Route::put('all-infos/{infos}', [
-            InfosController::class,
-            'update',
-        ])->name('all-infos.update');
-        Route::delete('all-infos/{infos}', [
-            InfosController::class,
-            'destroy',
-        ])->name('all-infos.destroy');
+// Route::prefix('/')
+//     ->middleware('auth')
+//     ->group(function () {
+//         Route::resource('roles', RoleController::class);
+//         Route::resource('permissions', PermissionController::class);
 
-        Route::resource('levee-fonds', LeveeFondController::class);
-        Route::resource('profiles', ProfileController::class);
-        Route::resource('societes', SocieteController::class);
-        Route::resource('users', UserController::class);
-    });
+//         Route::resource('associes', AssocieController::class);
+//         Route::resource('conjoints', ConjointController::class);
+//         Route::resource('gerants', GerantController::class);
+//         Route::get('all-infos', [InfosController::class, 'index'])->name(
+//             'all-infos.index'
+//         );
+//         Route::post('all-infos', [InfosController::class, 'store'])->name(
+//             'all-infos.store'
+//         );
+//         Route::get('all-infos/create', [
+//             InfosController::class,
+//             'create',
+//         ])->name('all-infos.create');
+//         Route::get('all-infos/{infos}', [InfosController::class, 'show'])->name(
+//             'all-infos.show'
+//         );
+//         Route::get('all-infos/{infos}/edit', [
+//             InfosController::class,
+//             'edit',
+//         ])->name('all-infos.edit');
+//         Route::put('all-infos/{infos}', [
+//             InfosController::class,
+//             'update',
+//         ])->name('all-infos.update');
+//         Route::delete('all-infos/{infos}', [
+//             InfosController::class,
+//             'destroy',
+//         ])->name('all-infos.destroy');
+
+//         Route::resource('levee-fonds', LeveeFondController::class);
+//         Route::resource('profiles', ProfileController::class);
+//         Route::resource('societes', SocieteController::class);
+//         Route::resource('users', UserController::class);
+//     });

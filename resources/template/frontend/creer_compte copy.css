@@ -1,0 +1,115 @@
+/* Style global */
+body {
+    
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+}
+
+/* Style du contenu principal */
+div {
+    margin: 120px auto;
+    max-width: 400px;
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 50px;
+    box-shadow: 0 0px 30px rgb(154, 235, 188);
+   
+}
+
+.required {
+    color: red;
+  }
+
+#telephone{
+    padding: 10px;
+    width: 360px;
+}
+h1 {
+    text-align: center;
+    color:rgb(28, 179, 91);
+    
+}
+
+/* Style de l'en-tête */
+header {
+    background-color: #2c3e50;
+    color: #fff;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 70px;
+   color:rgb(247, 242, 242)
+     
+}
+form {
+    margin-top: 20px;
+}
+
+fieldset {
+    border: none;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    
+    color: black;
+    font-size: 20px;
+}
+
+form a:hover {
+    color: red;
+  }
+a:hover {
+    
+    color:rgb(241, 217, 217);
+    text-decoration: underline;
+}
+
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="tel"] {
+    width: 94%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button[type="submit"] {
+    background-color: rgb(28, 179, 91);
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 20px;
+}
+
+footer {
+    background-color: #2c3e50;
+    color: #fff;
+    padding: 40px;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+}
+
+footer a {
+    margin-right: 25px;
+}

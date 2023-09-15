@@ -1,0 +1,151 @@
+/* Style global */
+body {
+   
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+}
+
+/* Style du contenu principal */
+div {
+    margin: 120px auto;
+    max-width: 600px;
+    background-color: white;
+    padding: 40px;
+    border-radius: 50px;
+    box-shadow: 0 0px 30px rgb(154, 235, 188);
+   
+}
+
+#Annonce{
+    text-align: center;
+    color: rgb(18, 89, 117);
+    font-size: 21.5px;
+}
+
+.required {
+    color: red;
+  }
+ 
+
+h1 {
+    text-align: center;
+    color:rgb(28, 179, 91);
+    font-size: 50px;
+    
+}
+
+/* Style de l'en-tête */
+header {
+    background-color: #2c3e50;
+    color: #2c3e50;
+    padding: 15px;
+   
+}
+
+
+
+
+
+#deconnexion{
+    font-size: 18px;
+}
+header #h_dec{
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+}
+header h1 {
+    margin: 0;
+    font-size: 70px;
+    color:rgb(247, 242, 242)
+}
+#menu{
+   background-color: rgb(18, 59, 59);
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+a:hover {
+    
+    color:rgb(241, 217, 217);
+    text-decoration: underline;
+}
+
+header a:hover{
+    color: rgb(157, 238, 174);
+    text-decoration:none ;
+}
+
+header a{
+    color: rgb(240, 247, 246);
+    font-size: 22px;
+    text-decoration-line: none   ;
+}
+form {
+    margin-top: 20px;
+   
+}
+
+.textarea{
+    border: 2px solid rgb(139, 182, 127);
+}
+
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    
+    color: black;
+    font-size: 23px;
+}
+
+form a:hover {
+    color: red;
+  }
+a:hover {
+    
+    color:rgb(241, 217, 217);
+    text-decoration: underline;
+}
+
+
+
+
+button[type="submit"] {
+    background-color: rgb(28, 179, 91);
+    color: #fff;
+    padding: 10px 50px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 22px;
+    margin:0 auto; /* Ajout de la propriété margin */
+    display: block; /* Pour occuper le bloc parent */
+    font-size: 20px;
+    text-align: center; /* Centrer le texte */
+    width: fit-content; /* Ajuste la largeur au contenu du bouton */
+}
+
+footer {
+    background-color: #2c3e50;
+    color: #fff;
+    padding: 40px;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+}
+
+footer a {
+    margin-right: 25px;
+}
