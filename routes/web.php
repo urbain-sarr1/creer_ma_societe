@@ -26,6 +26,20 @@ use App\Http\Controllers\PermissionController;
 
 require __DIR__ . '/frontend.php';
 require __DIR__ . '/backend.php';
+route::get('/connexion',function(){
+
+        return view('/frontend/connexion');
+});
+
+route::get('/creer_compte', function(){
+     
+    return view('/frontend/creer_compte');
+});
+
+route::get('/compte',function(){
+
+      return view('/frontend/compte');
+});
 // Auth::routes(['register'=>false]);php
 
 // Route::get('/', function () {

@@ -7,6 +7,8 @@
 <body>
     <header>
         @include('frontend.layout.header')
+        @yield('connexion')
+        @yield('menu')
     </header>
 
      

@@ -11,7 +11,9 @@ body {
     background-color: #f2f2f2;
 
 }
-
+.required {
+    color: red;
+  }
 /* Style du contenu principal */
 div {
     margin: 120px auto;

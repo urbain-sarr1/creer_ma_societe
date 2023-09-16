@@ -37,12 +37,12 @@ a:hover {
 
 
 /* Style du contenu principal */
-div {
+span {
     margin: 120px;
     color: black;
 }
 
-div p {
+span p {
     font-size: 25px;
 }
 li{

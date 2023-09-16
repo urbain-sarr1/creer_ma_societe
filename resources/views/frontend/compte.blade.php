@@ -1,11 +1,21 @@
 @extends('frontend.layout.master')
 
-@section('connexion')
-<a href="/connexion">Connexion</a>
+@section('menu')
+
+<a href="index.html"  id="deconnexion">Se déconnecter</a> <br>
+        </span>
+         <span  id="menu">
+         <a href="info_générales.html">Création de Societé</a> <br>
+        <a href="document_societé.html">Document de Société</a> <br>
+        <a href="contrats.html">Modéles de Contrat</a> <br>
+        <a href="assemblé_general.html">Assemblée Générales</a> <br>
+        <a href="levé_de_fond.html">Levé de Fond</a> 
+</span>
+
 @endsection
 
 @section('content')
-<div>
+<div >
     <p>Bienvenue sur la plateforme 'CREER MA SOCIETE'. Ici, vous pouvez créer votre société en quelques étapes simples.</p>
     <p>Notre plateforme a pour objectif de simplifier le processus de création d'entreprise en vous guidant tout au long du parcours. Que vous soyez un entrepreneur débutant ou expérimenté, nous sommes là pour vous aider.</p>
     <p>Sur notre plateforme, vous pourrez :</p>
