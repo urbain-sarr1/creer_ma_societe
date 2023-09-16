@@ -3,7 +3,7 @@
 @section('menu')
 
 <a href="index.html"  id="deconnexion">Se déconnecter</a> <br>
-        </span>
+ </span>
          <span  id="menu">
          <a href="info_générales.html">Création de Societé</a> <br>
         <a href="document_societé.html">Document de Société</a> <br>

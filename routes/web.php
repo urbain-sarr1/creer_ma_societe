@@ -40,6 +40,11 @@ route::get('/compte',function(){
 
       return view('/frontend/compte');
 });
+
+route::get('/leve_de_fond', function(){
+
+     return view('/frontend/leve_de_fond');
+});
 // Auth::routes(['register'=>false]);php
 
 // Route::get('/', function () {
